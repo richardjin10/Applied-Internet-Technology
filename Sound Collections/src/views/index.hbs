@@ -1,0 +1,36 @@
+<h1> Filter </h1>
+
+<form action="/" method="GET">
+  What<input type="text" name = "what"><br>
+  Where<input type="text" name = "where"><br>
+  Date<input type="text" name = "date"><br>
+  Hour<input type="text" name = "hour"><br>
+  <input type="submit" value="Filter">
+</form>
+
+<h1>Sounds:</h1>
+
+<table style="width:100%">
+  <tr>
+    <th>What</th>
+    <th>Where</th>
+    <th>Date</th>
+    <th>Hour</th>
+    <th>Description</th>
+  </tr>
+
+  {{#each sound}}
+  <tr>
+    <th><p>{{what}}</p></th>
+    <th><p>{{where}}</p></th>
+    <th><p>{{date}}</p></th>
+    <th><p>{{hour}}</p></th>
+    <th><p>{{desc}}</p></th>
+  </tr>
+
+
+  {{/each}}
+
+
+
+</table>

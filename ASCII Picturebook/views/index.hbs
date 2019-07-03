@@ -1,0 +1,29 @@
+<h2> Artworks</h2>
+
+<form action="/filter" method="GET">
+  Filter
+  <input type="text" name = "filter">
+  <input type="submit" value="submit">
+</form>
+
+<ul>
+{{#each picture}}
+<h3>{{title}}   {{date}}</h3>
+<li><h3><pre>{{art}}<pre></h3></li>
+
+<h3>
+  tags: {{#each tags}} <a href = "/filter?filter={{this}}">{{this}} </a>   &nbsp;&nbsp;&nbsp;   {{/each}}
+<h3>
+
+{{/each}}
+
+{{#each filteredpicture}}
+<h3>{{title}}  {{date}}</h3>
+<li><h3><pre>{{art}}<pre></h3></li>
+
+<h3>
+  tags: {{#each tags}} <a href = "/filter?filter={{this}}">{{this}} </a>   &nbsp;&nbsp;&nbsp;   {{/each}}
+<h3>
+
+{{/each}}
+</ul>

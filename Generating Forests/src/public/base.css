@@ -1,0 +1,28 @@
+body{
+  background-color: lightgray;
+}
+
+.active{
+
+  background-color: #fc0;
+}
+.hidden{
+
+  display:none;
+}
+
+.pinned{
+  background: gray;
+}
+
+.unpinned{
+
+}
+
+#pushtray{
+  background-color: red;
+  top: 0px;
+  right: 0px;
+  position: fixed;
+  z-index: 100;
+}
